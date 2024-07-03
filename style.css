@@ -1,0 +1,72 @@
+body {
+  margin: 50px 50px 0px 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  
+}
+
+.main {
+  flex: 1;
+  
+}
+
+.card {
+  width: 49%;
+  color: #c9c8c4;
+}
+
+h2, p {
+  padding: 0px 15px 15px 15px;
+}
+
+.wallpaper-img {
+  height: 250px;
+  float: left;
+  margin-right: 20px;
+ 
+}
+
+.left {
+  float: left;
+  background-color: #11191C;
+}
+
+.right {
+  float: right; 
+  background-color: #0A0607;
+}
+
+@media (max-width: 1840px) {
+  .wallpaper-img {
+    float: none;
+    width: 70%;
+    margin-left: 15%;
+    object-fit: cover;
+  }
+
+}
+
+@media (max-width:1150px) {
+  .right, .left {
+    float: none;
+  }
+
+  .left.card {
+    margin-bottom: 25px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .wallpaper-img {
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+  }
+
+
+}
